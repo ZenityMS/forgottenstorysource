@@ -1,0 +1,76 @@
+-- MySQL Administrator dump 1.4
+--
+-- ------------------------------------------------------
+-- Server version	5.1.38-community
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+
+
+--
+-- Create schema z830zlkad
+--
+
+CREATE DATABASE IF NOT EXISTS z830zlkad;
+USE z830zlkad;
+
+--
+-- Definition of table `territorymonsters`
+--
+
+DROP TABLE IF EXISTS `territorymonsters`;
+CREATE TABLE `territorymonsters` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `monsterid` int(11) unsigned NOT NULL DEFAULT '0',
+  `territoryid` int(11) unsigned NOT NULL DEFAULT '0',
+  `points` int(11) unsigned NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=23 DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `territorymonsters`
+--
+
+/*!40000 ALTER TABLE `territorymonsters` DISABLE KEYS */;
+INSERT INTO `territorymonsters` (`id`,`monsterid`,`territoryid`,`points`) VALUES 
+ (1,4230103,1,1),
+ (2,100101,1,5),
+ (3,9300060,1,5),
+ (4,1210102,2,1),
+ (5,9500102,2,1),
+ (6,4230102,2,5),
+ (7,9400502,2,5),
+ (8,9500121,2,5),
+ (9,9500156,2,5),
+ (10,210100,3,1),
+ (11,9500100,3,1),
+ (12,3210800,3,5),
+ (13,130100,4,1),
+ (14,3210100,4,5),
+ (15,9400514,1,5),
+ (16,9500139,1,1),
+ (17,9400549,2,5),
+ (18,9300039,2,1),
+ (19,8180001,3,1),
+ (20,9400014,3,5),
+ (21,9500179,4,1),
+ (22,9300139,4,5);
+/*!40000 ALTER TABLE `territorymonsters` ENABLE KEYS */;
+
+
+
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

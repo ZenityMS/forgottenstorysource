@@ -1,0 +1,1 @@
+﻿Update accounts set banned = -1 

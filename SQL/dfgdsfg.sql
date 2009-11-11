@@ -1,0 +1,1 @@
+﻿UPDATE accounts set loggedin = 0
